@@ -6,9 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'roboto-mono' : ["'Roboto Mono'",'monospace']
+        'roboto-mono' : ["'Roboto Mono'",'monospace'],
+        'raleway' : ["'Raleway'",'sans-serif']
       },
-      
+
       colors: {
         'ui-pastel-blue' : '#b0b8e8',
         'ui-pastel-pink' : '#e7b0b8',
