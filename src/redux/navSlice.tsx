@@ -14,6 +14,9 @@ const navSlice = createSlice({
     reducers: {
         toggleMenu: state => {
             state.isMenuOn = !state.isMenuOn
+        },
+        menuOff: state => {
+            state.isMenuOn = false
         }
     }
 
