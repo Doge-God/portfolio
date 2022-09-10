@@ -48,7 +48,7 @@ function NavBar() {
       >
         <ul className= ' mt-[60%] mb-16 space-y-4 flex flex-col justify-evenly'>
           <li className='xl:my-6 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
-            <Link onClick={() => dispatch(toggleMenu())} to="home" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
+            <Link data-testid='mobileHome' onClick={() => dispatch(toggleMenu())} to="home" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
           </li>
 
           <li className='xl:my-7 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>

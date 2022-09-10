@@ -2,8 +2,8 @@ import { Component } from "react";
 import { configure, addDecorator} from '@storybook/react';
 import { Provider } from 'react-redux';
 import store from "../redux/store";
-import {within, userEvent} from '@storybook/testing-library'
-import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport'
+import {within, userEvent} from '@storybook/testing-library';
+import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 
 import NavBar from "../components/NavBar";
 
@@ -27,18 +27,7 @@ export default {
 const Template = (args) => <NavBar/>
 
 export const navbarTest = () => <NavBar/>
-export const hoverOver = () => <NavBar/>
 export const toggleMobileMenu = () => <NavBar/>
-
-hoverOver.play = async ({canvasElement}) => {
-    const canvas = within(canvasElement);
-    const homeButton = await canvas.getByTestId('fullHome')
-    const aboutButton = await canvas.getByTestId('fullAbout')
-
-    await userEvent.hover(homeButton)
-    await sleep(1000)
-    await userEvent.hover(aboutButton)
-}
 
 toggleMobileMenu.parameters= {
     viewport: {
