@@ -20,7 +20,7 @@ function sendEmail(nameIn:string, messageIn:string, emailIn:string) {
 
 
 
-
+//MAIN
 function ContactPanel(props:propType) {
 
     const nameContent = useAppSelector(state => state.contact.name)
@@ -29,7 +29,7 @@ function ContactPanel(props:propType) {
     const dispatch = useAppDispatch()
 
     function checkSendEmail() {
-        if (nameContent.length == 0 || emailContent.length == 0 || messageContent.length == 0) {
+        if (nameContent.length === 0 || emailContent.length === 0 || messageContent.length === 0) {
             alert("Please fill in all fields.")
             return;
         } 

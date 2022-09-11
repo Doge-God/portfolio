@@ -26,18 +26,3 @@ export default {
 
 export const ContactPanelTest = () => <ContactPanel/>
 
-/*
-toggleMobileMenu.parameters= {
-    viewport: {
-        defaultViewport: 'iphone12'
-    }
-}
-toggleMobileMenu.play = async ({canvasElement}) => {
-    const canvas = within(canvasElement);
-    const menuButton = await canvas.getByTestId('menuButton')
-    
-    await sleep(500)
-    await userEvent.click(menuButton)
-    await sleep(500)
-    await userEvent.click(menuButton)
-}*/
