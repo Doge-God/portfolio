@@ -11,8 +11,8 @@ function RoundedButton(prop:Props) {
 
   return (
     <button onClick={prop.handleClick}
-    className={'py-3 px-6 flex rounded-full text-3xl bg-slate-700 text-slate-500'}
-    >{prop.text}</button>
+    className='py-3 px-6 flex rounded-full font-raleway font-semibold text-2xl 
+    bg-ui-pastel-blue text-ui-back-space-blue hover:bg-[#94a4ff] active:shadow-inner active:shadow-black'>{prop.text}</button>
   );
 }
 
