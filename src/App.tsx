@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactPanel from './components/ContactPanel';
 import NavBar from './components/NavBar';
+import ProjectsPanel from './components/ProjectsPanel';
 import WelcomePanel from './components/WelcomePanel';
 
 function App() {
@@ -15,9 +16,7 @@ function App() {
           <p className='text-center text-5xl text-ui-pastel-blue'>//ABOUT page under construction//</p>
         </div>
         
-        <div id='projects' className= ' bg-ui-back-space-blue h-screen flex flex-row items-center justify-center'>
-          <p className='text-center text-5xl text-ui-pastel-blue'>//PROJ. page under construction//</p>
-        </div>
+        <ProjectsPanel id='projects'/>
         
         <ContactPanel id='contact'/>
 
