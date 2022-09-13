@@ -10,25 +10,25 @@ function NavBar() {
   const dispatch = useAppDispatch()
 
   return (
-    <div className=' bg-transparent fixed top-0 left-0 h-screen w-28 xl:w-32 sm:bg-ui-pastel-blue'>
+    <div className=' bg-transparent fixed top-0 left-0 h-screen w-28 xl:w-32 sm:bg-gradient-to-br sm:from-ui-pastel-purple sm:to-ui-pastel-blue'>
       {/*LARGE FORMAT MENU*/}
       <div className='hidden h-screen sm:flex flex-col font-raleway text-center text-lg xl:text-xl font-semibold xl:font-bold caret-transparent'>
-        <ul className= 'mt-6 mb-16 flex flex-col justify-evenly'>
-          <li data-testid='fullHome' className=' my-6 xl:my-6 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+        <ul className= 'mt-[5vh] flex flex-col justify-evenly gap-[5vh]'>
+          <li data-testid='fullHome' className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link to="home" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
           </li>
 
-          <li data-testid='fullAbout' className=' my-6 xl:my-7 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+          <li data-testid='fullAbout' className='  text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link to="about" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>ABOUT</Link>
           </li>
 
-          <li className=' my-6 xl:my-7 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+          <li className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link to="projects" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>PROJ.</Link>
           </li>
         </ul>
 
         <Link to="contact" spy={true} smooth={true} duration={500} className=' 
-         py-2 xl:py-3 mt-auto mb-14 text-ui-back-space-bluetext-ui-pastel-blue
+         py-2 xl:py-3 mt-auto mb-[5vh] text-ui-back-space-bluetext-ui-pastel-blue
          hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>CONTACT</Link>
       </div>
 
@@ -42,20 +42,20 @@ function NavBar() {
 
       {/*MOBILE MENU*/}
       <div className= {
-          isMenuOn ? ' ease-in duration-150 shadow-2xl shadow-black bg-ui-pastel-blue h-screen w-40 top-0 left-0 justify-evenly absolute sm:hidden flex flex-col font-raleway text-center text-xl font-bold caret-transparent'
-          :  'ease-in duration-150 bg-ui-pastel-blue h-screen w-40 top-0 -left-40 justify-evenly absolute sm:hidden flex flex-col font-raleway text-center text-xl font-bold caret-transparent'
+          isMenuOn ? ' ease-in duration-150 shadow-2xl shadow-black bg-gradient-to-br from-ui-pastel-purple to-ui-pastel-blue h-screen w-40 top-0 left-0 justify-evenly absolute sm:hidden flex flex-col font-raleway text-center text-xl font-bold caret-transparent'
+          :  'ease-in duration-150 bg-gradient-to-br from-ui-pastel-purple to-ui-pastel-blue h-screen w-40 top-0 -left-40 justify-evenly absolute sm:hidden flex flex-col font-raleway text-center text-xl font-bold caret-transparent'
         }
       >
-        <ul className= ' mt-[60%] mb-16 space-y-4 flex flex-col justify-evenly'>
-          <li className='xl:my-6 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+        <ul className= ' mt-[60%] mb-16 space-y-4 flex flex-col justify-evenly gap-[5vh]'>
+          <li className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link data-testid='mobileHome' onClick={() => dispatch(toggleMenu())} to="home" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
           </li>
 
-          <li className='xl:my-7 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+          <li className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link onClick={() => dispatch(toggleMenu())} to="about" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>ABOUT</Link>
           </li>
 
-          <li className='xl:my-7 text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
+          <li className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
             <Link onClick={() => dispatch(toggleMenu())} to="projects" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>PROJ.</Link>
           </li>
         </ul>

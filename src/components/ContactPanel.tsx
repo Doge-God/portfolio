@@ -3,6 +3,9 @@ import { updateEmail, updateMessage, updateName } from '../redux/contactSlice';
 import {useAppSelector, useAppDispatch} from '../redux/hook';
 import RoundedButton from './utilities/RoundedButton';
 import axios from 'axios'
+import SectionTitle from './utilities/SectionTitle';
+
+const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 type propType = {
   id:string
@@ -28,12 +31,13 @@ function ContactPanel(props:propType) {
     const messageContent = useAppSelector(state => state.contact.message)
     const dispatch = useAppDispatch()
 
+    //check states and send email
     function checkSendEmail() {
         if (nameContent.length === 0 || emailContent.length === 0 || messageContent.length === 0) {
             alert("Please fill in all fields.")
             return;
         } 
-        else if (!emailContent.includes("@")) {
+        else if (!emailContent.toLowerCase().match(EMAIL_REGEX)) {
             alert("Please fill in a valid email.")
             return;
         } else {
@@ -43,15 +47,16 @@ function ContactPanel(props:propType) {
     }
 
   return (
-    <div id={props.id} className=' bg-slate-500 w-full bg-transparent flex flex-col items-center mb-5'>
-        <div className=' flex-col w-[80%]'>
-            <p className='text-5xl font-raleway font-semibold text-ui-pastel-blue my-5'>Contact Me</p>
+    <div id={props.id} className=' bg-slate-500 my-20 pb-10 w-full bg-transparent flex flex-col items-center mb-5'>
+        <div className=' flex-col w-[80%] max-w-5xl'>
 
-            <div className=' flex-row lg:flex-col lg:justify-between'>
+            <SectionTitle text='Contact Me'/>
+
+            <div className=' mt-3 flex-row lg:flex-col lg:justify-between'>
                 <input type='text' id='nameField' placeholder='Name' onChange={(content)=>dispatch(updateName(content.target.value))}
                 className=' bg-transparent rounded-lg my-2 p-2 outline outline-ui-pastel-blue w-full lg:w-[30%] text-ui-pastel-blue text-2xl' />
                 <input type='text' id='emailField' placeholder='Email' onChange={(content)=>dispatch(updateEmail(content.target.value))}
-                className=' bg-transparent rounded-lg my-2 lg:ml-4 p-2 outline outline-ui-pastel-blue w-full lg:w-[67%] text-ui-pastel-blue text-2xl' />
+                className=' bg-transparent rounded-lg my-2 lg:ml-4 p-2 outline outline-ui-pastel-blue w-full lg:w-[calc(70%-1rem)] text-ui-pastel-blue text-2xl' />
             </div>
 
             <textarea id='messageField' placeholder='Message' onChange={(content)=>dispatch(updateMessage(content.target.value))} 
