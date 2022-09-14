@@ -18,7 +18,7 @@ function ProjectCard(prop:Props) {
     <div className=' flex flex-col bg-[#232642] w-full max-w-lg rounded-2xl border-4 border-ui-back-frost-blue'>
         <img src={prop.imgSrc} className=' w-full h-96 object-cover rounded-t-2xl'></img>
         <div className=' p-6'>
-            <p className=' text-4xl font-raleway font-bold text-transparent bg-clip-text bg-gradient-to-b from-ui-pastel-blue to-ui-pastel-purple'>{prop.title}</p>
+            <p className=' text-3xl font-raleway font-bold text-transparent bg-clip-text bg-gradient-to-b from-ui-pastel-blue to-ui-pastel-purple'>{prop.title}</p>
 
             <div className=' text-sm sm:text-lg my-4 font-raleway font-normal text-ui-pastel-blue'>
                 {prop.description}
