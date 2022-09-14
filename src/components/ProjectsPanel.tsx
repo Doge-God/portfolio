@@ -22,7 +22,7 @@ function ProjectsPanel(props:propType) {
     <div id={props.id} className=' w-full flex flex-col justify-center items-center'>
 
 
-        <div className='w-fit max-w-[80%] grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8'>
+        <div className='w-fit max-w-[85%] grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8'>
 
             <SectionTitle text='My Projects'/>
 
