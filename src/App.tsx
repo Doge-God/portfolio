@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutPanel from './components/AboutPanel';
 import ContactPanel from './components/ContactPanel';
 import NavBar from './components/NavBar';
 import ProjectsPanel from './components/ProjectsPanel';
@@ -12,9 +13,7 @@ function App() {
 
         <WelcomePanel id='home' />
 
-        <div id='about' className=' bg-ui-back-space-blue h-screen flex flex-row items-center justify-center'>
-          <p className='text-center text-5xl text-ui-pastel-blue'>//ABOUT page under construction//</p>
-        </div>
+        <AboutPanel id='about'/>
         
         <ProjectsPanel id='projects'/>
         

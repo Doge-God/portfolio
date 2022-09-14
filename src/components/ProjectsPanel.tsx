@@ -1,8 +1,5 @@
 import React from 'react';
-import { updateEmail, updateMessage, updateName } from '../redux/contactSlice';
-import {useAppSelector, useAppDispatch} from '../redux/hook';
 import ProjectCard from './utilities/ProjectCard';
-import RoundedButton from './utilities/RoundedButton';
 import SectionTitle from './utilities/SectionTitle';
 
 const dogeBotPic = require('../resources/DogeBot2.png')

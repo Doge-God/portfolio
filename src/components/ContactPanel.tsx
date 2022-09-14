@@ -47,7 +47,7 @@ function ContactPanel(props:propType) {
     }
 
   return (
-    <div id={props.id} className=' bg-slate-500 my-20 pb-10 w-full bg-transparent flex flex-col items-center mb-5'>
+    <div id={props.id} className=' my-20 pb-10 w-full flex flex-col items-center mb-5'>
         <div className=' flex-col w-[80%] max-w-5xl'>
 
             <SectionTitle text='Contact Me'/>
