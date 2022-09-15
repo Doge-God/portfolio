@@ -15,19 +15,19 @@ function NavBar() {
       <div className='hidden h-screen sm:flex flex-col font-raleway text-center text-lg xl:text-xl font-semibold xl:font-bold caret-transparent'>
         <ul className= 'mt-[5vh] flex flex-col justify-evenly gap-[5vh]'>
           <li data-testid='fullHome' className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
-            <Link to="home" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
+            <Link to="home" spy={true} smooth={true} duration={400} className=' py-2 xl:py-3 inline-block w-full h-full'>HOME</Link>
           </li>
 
           <li data-testid='fullAbout' className='  text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
-            <Link to="about" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>ABOUT</Link>
+            <Link to="about" spy={true} smooth={true} duration={400} className=' py-2 xl:py-3 inline-block w-full h-full'>ABOUT</Link>
           </li>
 
           <li className=' text-ui-back-space-blue hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>
-            <Link to="projects" spy={true} smooth={true} duration={500} className=' py-2 xl:py-3 inline-block w-full h-full'>PROJ.</Link>
+            <Link to="projects" spy={true} smooth={true} duration={400} className=' py-2 xl:py-3 inline-block w-full h-full'>PROJ.</Link>
           </li>
         </ul>
 
-        <Link to="contact" spy={true} smooth={true} duration={500} className=' 
+        <Link to="contact" spy={true} smooth={true} duration={400} className=' 
          py-2 xl:py-3 mt-auto mb-[5vh] text-ui-back-space-bluetext-ui-pastel-blue
          hover:bg-ui-back-space-blue hover:text-ui-pastel-blue'>CONTACT</Link>
       </div>
