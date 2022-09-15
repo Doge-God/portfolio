@@ -2,7 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Doge-God.github.io/portfolio",
   "dependencies": {
+    "-": "^0.0.1",
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,6 +16,7 @@
     "@types/react-scroll": "^1.8.4",
     "@types/storybook__react": "^5.2.1",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -22,6 +25,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
     "redux": "^4.2.0",
+    "save-dev": "^0.0.1-security",
     "typescript": "^4.8.2",
     "web-vitals": "^2.1.4"
   },
@@ -31,7 +35,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
