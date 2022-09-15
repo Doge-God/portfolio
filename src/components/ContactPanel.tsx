@@ -75,13 +75,13 @@ function ContactPanel(props:propType) {
             <SectionTitle text='Contact Me'/>
 
             <div className=' mt-3 flex-row lg:flex-col lg:justify-between'>
-                <input type='text' id='nameField' value={nameContent} placeholder='Name' onChange={(content)=>dispatch(updateName(content.target.value))}
+                <input type='text' data-testid='name' id='nameField' value={nameContent} placeholder='Name' onChange={(content)=>dispatch(updateName(content.target.value))}
                 className=' bg-transparent rounded-lg my-2 p-2 outline active:outline-2 outline-ui-pastel-blue w-full lg:w-[30%] text-ui-pastel-blue text-2xl' />
-                <input type='text' id='emailField' value={emailContent} placeholder='Email' onChange={(content)=>dispatch(updateEmail(content.target.value))}
+                <input type='text' data-testid='email' id='emailField' value={emailContent} placeholder='Email' onChange={(content)=>dispatch(updateEmail(content.target.value))}
                 className=' bg-transparent rounded-lg my-2 lg:ml-4 p-2 outline outline-ui-pastel-blue w-full lg:w-[calc(70%-1rem)] text-ui-pastel-blue text-2xl' />
             </div>
 
-            <textarea id='messageField' value={messageContent} placeholder='Message' onChange={(content)=>dispatch(updateMessage(content.target.value))} 
+            <textarea id='messageField' data-testid='message' value={messageContent} placeholder='Message' onChange={(content)=>dispatch(updateMessage(content.target.value))} 
             className=' bg-transparent rounded-lg my-4 p-2 text-2xl w-full h-60
             outline outline-ui-pastel-blue text-ui-pastel-blue'/>
 

@@ -50,17 +50,18 @@ function AboutPanel(props:propType) {
         <div className=' flex flex-col w-[80%] max-w-5xl'>
             <SectionTitle text='About Me'/>
             
-            <div className='w-full max-w-5xl justify-self-center flex flex-col lg:flex-row
+            <div className='mt-3 w-full max-w-5xl justify-self-center flex flex-col lg:flex-row
                    font-raleway
                  divide-ui-back-frost-blue divide-y-2 divide-dotted lg:divide-x-2 lg:divide-y-0'>
                 
                 {/*INTRO CONTAINER*/}
                 <div className='w-full lg:w-[60%]'>
-                    <p className=' text-ui-pastel-blue text-xl p-3'> I am Futian Zhou. Currently studying a Bachelor of Engineering 
-                    and Design conjoint degree majoring in software development. </p>
-                    <p className='text-ui-pastel-blue text-xl p-3'>I am passionate about industrial design. However I firmly believe 
+                    <p className=' text-ui-pastel-blue text-xl pr-3'> I am Futian Zhou. Currently studying a Bachelor of Engineering 
+                    and Design conjoint degree majoring in software engineering. </p>
+                    <br/>
+                    <p className='text-ui-pastel-blue text-xl pr-3'>I am passionate about industrial design. However I firmly believe 
                     that in the future the success of a product will largely depends on how it's integrated into the ever growing 
-                    cloud. Hence my chose direction of study.</p>
+                    cloud. Hence my chosen direction of study.</p>
                 </div>
 
                 {/*SKILL CONTAINER*/}

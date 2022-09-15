@@ -25,4 +25,20 @@ export default {
 }
 
 export const ContactPanelTest = () => <ContactPanel/>
+export const invalidEmailTest = () => <ContactPanel/>
+
+invalidEmailTest.play = async ({canvasElement}) => {
+    const canvas = within(canvasElement);
+    const nameField = canvas.getByTestId('name')
+    const emailField = canvas.getByTestId('email')
+    const messageField = canvas.getByTestId('message')
+    const button = canvas.getByText('Submit')
+
+    await userEvent.type(nameField,'Joe',{delay:15})
+    await userEvent.type(emailField,'joemail.mail.com',{delay:15})
+    await userEvent.type(messageField,'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',{delay:15})
+    
+    await userEvent.click(button)
+}
+
 
