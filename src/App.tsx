@@ -15,6 +15,7 @@ function App() {
 
         <AboutPanel id='about'/>
         
+        
         <ProjectsPanel id='projects'/>
         
         <ContactPanel id='contact'/>

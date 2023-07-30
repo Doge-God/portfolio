@@ -6,6 +6,7 @@ const dogeBotPic = require('../resources/DogeBot2.png')
 const portfolioPic = require('../resources/Portfolio.png')
 const stackPic = require('../resources/Stack.png')
 const fridgePic = require('../resources/FridgeLogger.png')
+const experimentsPic = require('../resources/DigitalExperiments.png')
 
 type propType = {
   id:string
@@ -34,16 +35,22 @@ function ProjectsPanel(props:propType) {
                     the problem thoroughly and explored various possibilities to find the optimal design solution.
                 </div>
             }/>
-            <ProjectCard id='dogeBot' title='DogeBot' imgSrc={dogeBotPic} extLink='https://github.com/Doge-God/DogeBot' description={
+            <ProjectCard id='experiments' title='Digital Tooling Experiments' imgSrc={experimentsPic} extLink='https://miro.com/app/board/uXjVPjMcna4=/?share_link_id=123820344246' description={
+                <div> Three projects in three weeks, where I derive and develop upon some very vague prompts: an phone app to promote 
+                    public transport targeted at 6 year olds; a poster with your childhood toy; a virtual experience to immerse the user 
+                    in a different culture.
+                </div>
+            }/>
+            {/*<ProjectCard id='dogeBot' title='DogeBot' imgSrc={dogeBotPic} extLink='https://github.com/Doge-God/DogeBot' description={
                 <div>A Python Discord bot I have made for my friend group since we can't find a stable bot to replace Rhythm.
                 It finds songs with name or exact url and place them in an editable queue to be streamed in voice channels.
                 </div>
-            }/>
+            }/>*/}
 
             <ProjectCard id='fridgelogger' title='FridgeLogger API' extLink='https://github.com/Doge-God/phase3-api2' imgSrc={fridgePic} description={
                 <div>Part of a IoT project that transforms any fridge to a smart fridge. This is an API that take data from said IoT
                     device that logs food usage for research. It is a .net project writtent in C# that employs EF core, clean 
-                    architecture, connect to an Azure SQL server and is deployed via a ci/cd pipeline to Azure.
+                    architecture, connect to an Azure SQL server (offline now for cost) and is deployed via a ci/cd pipeline to Azure.
                 </div>
             }/>
         </div>

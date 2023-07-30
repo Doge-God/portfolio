@@ -41,7 +41,7 @@ function ContactPanel(props:propType) {
         dispatch(updateLoading(true))
         setFieldsDisable(true)
         axios.defaults.headers.post['Content-Type'] = 'application/json';
-        axios.post('https://formsubmit.co/ajax/86af36544cae2615bec00456aabe687b', {
+        axios.post('https://formsubmit.co/ajax/futianzhou@hotmail.com', {
         name: nameIn ,
         email: emailIn,
         message: messageIn }) 
