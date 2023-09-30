@@ -1,8 +1,8 @@
-# Personal Portfolio (MSA Phase 3 Frontend)
+# Personal Portfolio
 
 Always wanted one of these, so took the chance to make my own.
 
-## Phase 3 Features
+## Features
 - UI scalability (e.g. project card size and text size scales, everything else scales) 
 - Mobile first development (*lots* of screen size break points all around)
 - Storybook with action and intereaction (interaction test on nav bar button, contact form, action on RoundedButton, nav bar)
