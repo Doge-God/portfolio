@@ -10,3 +10,8 @@ Always wanted one of these, so took the chance to make my own.
 - Redux state management (all states in the app uses Redux, example in contact form and mobile nav bar)
 
 Published at https://doge-god.github.io/portfolio/
+
+### New Portfolio WIP
+https://github.com/Doge-God/portfolio2
+
+
